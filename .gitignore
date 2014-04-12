@@ -1,0 +1,7 @@
+*.suo
+*.un~
+bin/
+obj/
+packages/*
+*.pdb
+*~
