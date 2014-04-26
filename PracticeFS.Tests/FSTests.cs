@@ -26,7 +26,7 @@ namespace PracticeFS.Tests
 			var x = 4;
 			var y = 5;
 
-			var result = FSSource.multip(x, y);
+			var result = FSSource.multiplyXandY(x, y);
 
 			Assert.AreEqual(20, result);
 		}
