@@ -31,5 +31,12 @@ namespace PracticeFS.Tests
 			Assert.AreEqual(20, result);
 		}
 
+		[Test]
+		public void TwoIsAFactorOfFour()
+		{
+			var result = FSSource.isFactor(2, 4);
+
+			Assert.True(result);
+		}
     }
 }
