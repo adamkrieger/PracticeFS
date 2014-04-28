@@ -1,5 +1,7 @@
 ﻿module PracticeFS.FSSource
 
+open UsefulFuncs
+
 type Person = {First:string; Last:string}
 
 let multiplyXandY x y = x * y
@@ -9,14 +11,6 @@ let add1 x = x + 1
 let cyl radius length : float =
     let pi = 3.14
     length * pi  * radius * radius
-
-//taken from http://en.wikibooks.org/wiki/F_Sharp_Programming/Lists
-let rec filter predicate = function
-    | [] -> []
-    | hd :: tl ->
-        match predicate hd with
-            | true -> hd::filter predicate tl 
-            | false -> filter predicate tl
 
 let isDivisor x y = 
     match (y % x) with

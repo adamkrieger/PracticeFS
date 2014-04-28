@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="UsefulFuncs.fs" />
     <Compile Include="FSSource.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
