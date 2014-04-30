@@ -17,6 +17,7 @@ let isDivisor x y =
         | 0 -> true
         |_ -> false
 
+//This is absolutely not optimized
 let sumOfProperDivisors n =
     let array = [1..(n-1)]
     let properDivisors = array |> filter (fun f -> isDivisor f n)
@@ -27,8 +28,8 @@ let isAmicable x =
     let dB = sumOfProperDivisors (dA)
     match (x = dB) with
         | true -> match (x <> dA) with
-            | true -> true
-            | false -> false
+                    | true -> true
+                    | false -> false
         | false -> false
 
 let sumOfAmicableNumbers x =

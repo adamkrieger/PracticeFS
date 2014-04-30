@@ -34,9 +34,27 @@ namespace PracticeFS.Tests
 		[Test]
 		public void TwoIsAFactorOfFour()
 		{
-			var result = FSSource.isFactor(2, 4);
+			var result = FSSource.isDivisor(2, 4);
 
 			Assert.True(result);
+		}
+
+		[Test]
+		public void VerifiedAmicableNumbersAreAmicable()
+		{
+			var result1 = FSSource.isAmicable(220);
+			var result2 = FSSource.isAmicable(284);
+
+			Assert.True(result1);
+			Assert.True(result2);
+		}
+
+		[Test]
+		public void VerifiedSumOfAmicableNumbersUpTo10000()
+		{
+			var result = FSSource.sumOfAmicableNumbers(10000);
+
+			Assert.AreEqual(31626, result);
 		}
     }
 }
