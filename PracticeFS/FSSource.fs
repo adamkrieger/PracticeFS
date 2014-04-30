@@ -19,20 +19,17 @@ let isDivisor x y =
 
 //This is absolutely not optimized
 let sumOfProperDivisors n =
-    let array = [1..(n-1)]
-    let properDivisors = array |> filter (fun f -> isDivisor f n)
-    List.sum properDivisors
+    [1..(n-1)] |> filter (fun f -> isDivisor f n) |> List.sum
 
-let isAmicable x =
-    let dA = sumOfProperDivisors x
-    let dB = sumOfProperDivisors (dA)
-    match (x = dB) with
-        | true -> match (x <> dA) with
+let isAmicable a =
+    let dA = sumOfProperDivisors a
+    let dB = sumOfProperDivisors dA
+    match (a = dB) with
+        | true -> match (a <> dA) with
                     | true -> true
                     | false -> false
         | false -> false
 
 let sumOfAmicableNumbers x =
-    let array = [1..x]
-    let arrayOfAmicableNumbers = array |> filter (fun f -> isAmicable f)
-    List.sum arrayOfAmicableNumbers
+    [1..x] |> filter (fun f -> isAmicable f) |> List.sum
+    
