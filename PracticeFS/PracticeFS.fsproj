@@ -50,7 +50,7 @@
     <None Include="App.config" />
     <Compile Include="UsefulFuncs.fs" />
     <Compile Include="EnglishCurrency.fs" />
-    <Compile Include="FSSource.fs" />
+    <Compile Include="BasicMath.fs" />
     <Compile Include="RecursionSamples.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>

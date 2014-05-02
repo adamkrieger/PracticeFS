@@ -1,14 +1,9 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PracticeFS.Tests
 {
 	[TestFixture]
-    public class FSTests
+    public class FsTests
     {
 		[Test]
 		public void DeclaringAPersonReturnsFirstName()
@@ -23,8 +18,8 @@ namespace PracticeFS.Tests
 		[Test]
 		public void MultiplyingValuesWorksAsExpected()
 		{
-			var x = 4;
-			var y = 5;
+			const int x = 4;
+			const int y = 5;
 
 			var result = FSSource.multiplyXandY(x, y);
 
@@ -56,5 +51,6 @@ namespace PracticeFS.Tests
 
 			Assert.AreEqual(31626, result);
 		}
+
     }
 }

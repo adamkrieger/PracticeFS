@@ -13,6 +13,9 @@
 //      100,50,20,20,10
 //      etc
 
+let sortCoins coins =
+    coins |> Array.sort |> Array.rev
+
 let getCountOfCombinationsThatEqualTotal valueList total =
     5
 
