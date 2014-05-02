@@ -1,4 +1,4 @@
-﻿module PracticeFS.FSSource
+﻿module PracticeFS.BasicMath
 
 open UsefulFuncs
 

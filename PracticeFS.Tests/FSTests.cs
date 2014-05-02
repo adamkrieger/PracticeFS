@@ -8,7 +8,7 @@ namespace PracticeFS.Tests
 		[Test]
 		public void DeclaringAPersonReturnsFirstName()
 		{
-			var person = new FSSource.Person("Adam","Krieger");
+			var person = new BasicMath.Person("Adam","Krieger");
 
 			var firstName = person.First;
 
@@ -21,7 +21,7 @@ namespace PracticeFS.Tests
 			const int x = 4;
 			const int y = 5;
 
-			var result = FSSource.multiplyXandY(x, y);
+			var result = BasicMath.multiplyXandY(x, y);
 
 			Assert.AreEqual(20, result);
 		}
@@ -29,7 +29,7 @@ namespace PracticeFS.Tests
 		[Test]
 		public void TwoIsAFactorOfFour()
 		{
-			var result = FSSource.isDivisor(2, 4);
+			var result = BasicMath.isDivisor(2, 4);
 
 			Assert.True(result);
 		}
@@ -37,8 +37,8 @@ namespace PracticeFS.Tests
 		[Test]
 		public void VerifiedAmicableNumbersAreAmicable()
 		{
-			var result1 = FSSource.isAmicable(220);
-			var result2 = FSSource.isAmicable(284);
+			var result1 = BasicMath.isAmicable(220);
+			var result2 = BasicMath.isAmicable(284);
 
 			Assert.True(result1);
 			Assert.True(result2);
@@ -47,7 +47,7 @@ namespace PracticeFS.Tests
 		[Test]
 		public void VerifiedSumOfAmicableNumbersUpTo10000()
 		{
-			var result = FSSource.sumOfAmicableNumbers(10000);
+			var result = BasicMath.sumOfAmicableNumbers(10000);
 
 			Assert.AreEqual(31626, result);
 		}
